@@ -1,12 +1,13 @@
 html body {
 	background-color: #111111;
+	font-family: 'Halant', serif;
 }
+
 .main-image {
 	z-index: 0;
 	position: absolute;
 	top: 200px;
 	left: 310px;
-
 }
 
 .main-text {
@@ -14,18 +15,45 @@ html body {
 	color: white;
 	z-index: 0;
 	position: absolute;
-	top: 600px;
+	top: 550px;
 	left: 310px;
+	background: -webkit-linear-gradient(bottom left, #FF0F0F, #FFDF80);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	width: 50%;
+  	line-height: 110px;
 }
 
 .box {
-	border: 1px solid #ffffff;
 	height: calc(100vh / 3);
+}
+
+.box1 {
+	height: calc(100vh / 3);
+	background-color: #6e6e6d;
+	opacity: 0.1;
+}
+
+.box2 {
+	height: calc(100vh / 3);
+	background-color: #6e6e6d;
+	opacity: 0.18;
+}
+
+.box3 {
+	height: calc(100vh / 3);
+	background-color: #6e6e6d;
+	opacity: 0.2;
+}
+
+.box4 {
+	height: calc(100vh / 3);
+	background-color: #6e6e6d;
+	opacity: 0.15;
 }
 
 .logo {
 	color: #ffffff;
 	font-size: 40px;
 	text-align: center;
-	display: table-cell;
 }
