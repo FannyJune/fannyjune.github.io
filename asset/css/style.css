@@ -1,0 +1,31 @@
+html body {
+	background-color: #111111;
+}
+.main-image {
+	z-index: 0;
+	position: absolute;
+	top: 200px;
+	left: 310px;
+
+}
+
+.main-text {
+	font-size: 120px;
+	color: white;
+	z-index: 0;
+	position: absolute;
+	top: 600px;
+	left: 310px;
+}
+
+.box {
+	border: 1px solid #ffffff;
+	height: calc(100vh / 3);
+}
+
+.logo {
+	color: #ffffff;
+	font-size: 40px;
+	text-align: center;
+	display: table-cell;
+}
