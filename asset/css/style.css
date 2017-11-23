@@ -232,3 +232,22 @@ input[placeholder] {
     vertical-align: middle;
     margin: auto;
 }
+
+form.form-payment-options {
+    margin: auto;
+}
+
+.form-payment-options>label {
+    display: block;
+}
+
+.form-payment-options>label>input {
+    margin-right: 10px;
+}
+
+.subtitle-small {
+    font-size: 32px;
+    background: -webkit-linear-gradient(bottom left, #FF0F0F, #FFDF80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
