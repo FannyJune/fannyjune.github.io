@@ -166,7 +166,7 @@ p {
 }
 
 p {
-    display: inline-block;
+    display: block;
     vertical-align: middle;
     text-align: center;
     width: 100%;
@@ -214,9 +214,21 @@ input[type="radio"] {}
 }
 
 input[placeholder] {
-    /* padding-left: 17px; */
 }
 
 .account-holder>label {
+    margin: auto;
+}
+
+.tips {
+}
+
+.tips > p {
+    vertical-align: middle;
+    /* text-align: center; */
+}
+
+.guidelines {
+    vertical-align: middle;
     margin: auto;
 }
