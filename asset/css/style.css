@@ -58,7 +58,7 @@ html body {
 	color: white;
 	font-size: 40px;
 	line-height: 40px;
-	display: flex; 
+	display: flex;
 	align-items: center;
 }
 
@@ -105,8 +105,8 @@ html body {
 	text-align: center;
 	width: 100%;
 	background: -webkit-linear-gradient(bottom left, #FF0F0F, #FFDF80);
-  	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .link {
@@ -119,4 +119,18 @@ html body {
 .channellogo {
 	width: 40%;
 	margin: 0 auto;
+}
+
+div.closeX {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.closeX > a {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    color: #bdbdbd !important;
+    cursor: pointer;
 }
