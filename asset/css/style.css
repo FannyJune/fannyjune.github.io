@@ -6,6 +6,8 @@ html body {
 .row {
 	margin-left: 0 !important;
 	margin-right: 0 !important;
+	color: white;
+	align-items: center;
 }
 
 .main-image {
@@ -133,4 +135,61 @@ div.closeX {
     font-size: 50px;
     color: #bdbdbd !important;
     cursor: pointer;
+}
+
+.col-lg-3 {
+    align-items: center;
+    display: flex;
+}
+
+.next-chevron {
+    background: url(../../asset/img/next-page-white.svg);
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 4px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+p {
+}
+
+.col-lg-3 {
+}
+
+.step {
+    width: 103px;
+    margin: auto;
+}
+
+p {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+}
+
+form.form-plan-options {
+    /* display: flex; */
+    margin: auto;
+}
+
+input[type="radio"] {}
+
+.form-plan-options>label>input {
+    margin-right: 10px;
+}
+
+.form-plan-options>label {
+    display: block;
+}
+
+.action-button {
+    background: -webkit-linear-gradient(bottom left, #FF0F0F, #FFDF80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
 }
