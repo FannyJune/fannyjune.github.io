@@ -6,6 +6,8 @@ html body {
 .row {
 	margin-left: 0 !important;
 	margin-right: 0 !important;
+	color: white;
+	align-items: center;
 }
 
 .main-image {
@@ -58,7 +60,7 @@ html body {
 	color: white;
 	font-size: 40px;
 	line-height: 40px;
-	display: flex; 
+	display: flex;
 	align-items: center;
 }
 
@@ -105,8 +107,8 @@ html body {
 	text-align: center;
 	width: 100%;
 	background: -webkit-linear-gradient(bottom left, #FF0F0F, #FFDF80);
-  	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .link {
@@ -119,4 +121,133 @@ html body {
 .channellogo {
 	width: 40%;
 	margin: 0 auto;
+}
+
+div.closeX {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.closeX > a {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    color: #bdbdbd !important;
+    cursor: pointer;
+}
+
+.col-lg-3 {
+    align-items: center;
+    display: flex;
+}
+
+.next-chevron {
+    background: url(../../asset/img/next-page-white.svg);
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 4px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+p {
+}
+
+.col-lg-3 {
+}
+
+.step {
+    width: 103px;
+    margin: auto;
+}
+
+p {
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+}
+
+form.form-plan-options {
+    /* display: flex; */
+    margin: auto;
+}
+
+input[type="radio"] {}
+
+.form-plan-options>label>input {
+    margin-right: 10px;
+}
+
+.form-plan-options>label {
+    display: block;
+}
+
+.action-button {
+    background: -webkit-linear-gradient(bottom left, #FF0F0F, #FFDF80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+}
+
+.account-holder > label > input {
+    border-radius: 4px;
+    border-color: white;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    padding-left: 15px;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.account-holder {
+    /* display: inline-block; */
+}
+
+.account-holder {
+}
+
+input[placeholder] {
+}
+
+.account-holder>label {
+    margin: auto;
+}
+
+.tips {
+}
+
+.tips > p {
+    vertical-align: middle;
+    /* text-align: center; */
+}
+
+.guidelines {
+    vertical-align: middle;
+    margin: auto;
+}
+
+form.form-payment-options {
+    margin: auto;
+}
+
+.form-payment-options>label {
+    display: block;
+}
+
+.form-payment-options>label>input {
+    margin-right: 10px;
+}
+
+.subtitle-small {
+    font-size: 32px;
+    background: -webkit-linear-gradient(bottom left, #FF0F0F, #FFDF80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
