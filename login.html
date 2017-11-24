@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Halant:700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="asset/js/script.js"></script>
 </head>
 
 <body>
@@ -42,7 +45,7 @@
                     <input type="radio" name="plan" value="Standard"> Standard</label>
             </form>
         </div>
-        <div class="col-lg-3 box">
+        <div class="col-lg-3 box4">
         </div>
     </div>
     <div class="row justify-content-end">
@@ -64,7 +67,7 @@
     </div>
 
     <div class="row justify-content-end">
-            <div class="col-lg-3 box1">
+            <div class="col-lg-3 box4">
             </div>
             <div class="col-lg-3 box1">
                 <p>E-mail</p>
@@ -74,12 +77,12 @@
                     <input type="text" name="accountholder-email" placeholder="enter your email">
                 </label>
             </div>
-            <div class="col-lg-3 box2">
+            <div class="col-lg-3 box">
             </div>
         </div>
 
         <div class="row justify-content-end">
-                <div class="col-lg-3 box1">
+                <div class="col-lg-3 box">
                 </div>
                 <div class="col-lg-3 box1">
                     <p>Password</p>
@@ -89,7 +92,7 @@
                         <input type="password" name="accountholder-password" placeholder="create a password">
                     </label>
                 </div>
-                <div class="col-lg-3 box2 tips">
+                <div class="col-lg-3 box4 tips">
                     <div class="guidelines">
                         <p>7 characters min</p>
                         <p>letters and numbers only</p>
@@ -108,12 +111,12 @@
                     </div>
                     <div class="col-lg-3 box2">
                         <form class="form-payment-options">
-                            <label>
-                                <input type="radio" name="payment" value="Visa" checked> Visa</label>
-                            <label>
-                                <input type="radio" name="payment" value="Venmo"> Venmo</label>
-                            <label>
-                                <input type="radio" name="payment" value="Paypal"> Paypal</label>
+                            <label >
+                                <input onclick="onOptionButtonChangeForLogin(event,'visa')" type="radio" name="payment" value="Visa" checked> Visa</label>
+                            <label > 
+                                <input onclick="onOptionButtonChangeForLogin(event,'venmo')" type="radio" name="payment" value="Venmo"> Venmo</label>
+                            <label >
+                                <input onclick="onOptionButtonChangeForLogin(event,'paypal')" type="radio" name="payment" value="Paypal"> Paypal</label>
                         </form>
                     </div>
                     <div class="col-lg-3 box">
@@ -121,13 +124,13 @@
                 </div>
 
                 <div class="row justify-content-end">
-                        <div class="col-lg-3 box1">
+                        <div class="col-lg-3 box">
                         </div>
                         <div class="col-lg-3 box1">
                             <p>Account info</p>
                         </div>
                         <div class="col-lg-3 box1 account-holder">
-                            <label>
+                            <label id="venmo_form" class="switching_form">
                                 <input type="text" name="paymentaccount-username" placeholder="enter your username">
                             </label>
                         </div>
