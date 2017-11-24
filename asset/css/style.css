@@ -154,8 +154,7 @@ div.closeX {
     vertical-align: middle;
 }
 
-p {
-}
+p {}
 
 .col-lg-3 {
 }
@@ -250,4 +249,7 @@ form.form-payment-options {
     background: -webkit-linear-gradient(bottom left, #FF0F0F, #FFDF80);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.col-lg-6.box1 {
 }
