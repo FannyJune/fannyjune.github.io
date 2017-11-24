@@ -254,3 +254,36 @@ img.cover {
 div#fanny-pic {
     background-image: url(../../asset/img/1.jpg);
 }
+
+.form-contact > label > input {
+    border-radius: 4px;
+    border-color: white;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    padding-left: 15px;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+input#message-content {
+    height: calc(100vh / 6);
+}
+
+input.break {}
+
+textarea {}
+
+textarea#message-content {
+    height: calc(100vh/ 6);
+    color: white;
+    background-color: transparent;
+    border-radius: 4px;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    padding-left: 10px;
+    margin-bottom: 1rem;
+}
