@@ -113,7 +113,7 @@
         <div class="col-lg-3 box2">
             <form class="form-payment-options">
                 <label>
-                    <input onclick="onOptionButtonChangeForLogin(event,'visa')" type="radio" name="payment" value="Visa" checked> Visa</label>
+                    <input onclick="onOptionButtonChangeForLogin(event,'card')" type="radio" name="payment" value="Card" checked> Credit card</label>
                 <label>
                     <input onclick="onOptionButtonChangeForLogin(event,'venmo')" type="radio" name="payment" value="Venmo"> Venmo</label>
                 <label>
@@ -134,134 +134,53 @@
             <label id="venmo_form" class="switching_form">
                 <input type="text" name="paymentaccount-username" placeholder="enter your username">
             </label>
+
+            <label id="card_form" class="switching_form">
+                <select name="paymentaccount-credit-card" id="paymentaccount-credit-card">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="discover">Discover</option>
+                </select>
+                <input type="text" name="paymentaccount-username" placeholder="cardholder name">
+                <input type="text" name="paymentaccount-card-number" placeholder="card number">
+                <div id="expiration-cvv">
+                    <select name="paymentaccount-expiration-date-month" id="paymentaccount-expiration-date-month">
+                        <option value="january">01</option>
+                        <option value="february">02</option>
+                        <option value="march">03</option>
+                        <option value="april">04</option>
+                        <option value="may">05</option>
+                        <option value="june">06</option>
+                        <option value="july">07</option>
+                        <option value="august">08</option>
+                        <option value="september">09</option>
+                        <option value="october">10</option>
+                        <option value="november">11</option>
+                        <option value="december">12</option>
+                    </select>
+                    <select name="paymentaccount-expiration-date-year" id="paymentaccount-expiration-date-year">
+                        <option value="year1">17</option>
+                        <option value="year2">18</option>
+                        <option value="year3">19</option>
+                        <option value="year4">20</option>
+                        <option value="year5">21</option>
+                        <option value="year6">22</option>
+                        <option value="year7">23</option>
+                        <option value="year8">24</option>
+                    </select>
+                    <input type="text" name="paymentaccount-expiration-cvv" placeholder="CVV" id="CVV">
+                </div>
+            </label>
+           
+
+            <label id="paypal_form" class="switching_form">
+                <p>You will be directed to PayPal to log in and complete your payment.</p>
+            </label>
         </div>
         <div class="col-lg-3 box2 subtitle subtitle-small">
             <p>Start membership</p>
         </div>
     </div>
-    <!-- <div class="row justify-content-start">
-        <div class="col-lg-6 box2row subtitle">
-            <p style="padding-left: 50px">Watch all videos existing
-                <br> in the whole world.</p>
-        </div>
-        <div class="col-lg-6" style="padding:0">
-            <div class="row">
-                <div class="col-lg-6 moviebox ce-image">
-                    <img class="boximgwidth" src="asset/img/3.jpg">
-                </div>
-                <div class="col-lg-6 moviebox ce-image">
-                    <img class="boximg" src="asset/img/4.png">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 moviebox ce-image">
-                    <img class="boximg" src="asset/img/5.jpg">
-                </div>
-                <div class="col-lg-6 moviebox ce-image">
-                    <img class="boximgwidth" src="asset/img/6.jpg">
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- <div class="row justify-content-end">
-        <div class="col-lg-3 moviebox ce-image">
-            <img class="boximg" src="asset/img/7.png">
-        </div>
-        <div class="col-lg-3 moviebox ce-image">
-            <img class="boximgwidth" src="asset/img/8.jpg">
-        </div>
-        <div class="col-lg-3 moviebox ce-image">
-            <img class="boximg" src="asset/img/9.jpg">
-        </div>
-        <div class="col-lg-3 moviebox ce-image">
-            <img class="boximgwidth" src="asset/img/10.jpg">
-        </div>
-    </div> -->
-    <!-- 2nd cover ends -->
-
-    <!-- <div class="row justify-content-end">
-        <div class="col-lg-3 box4">
-        </div>
-        <div class="col-lg-3 box1">
-        </div>
-        <div class="col-lg-3 box4 subtitle">
-            <p class="link">Plan</p>
-        </div>
-        <div class="col-lg-3 box1 subtitle">
-            <p class="logo">Join</p>
-        </div>
-    </div> -->
-    <!-- <div class="row justify-content-end">
-        <div class="col-lg-3 moviebox ce-image">
-            <img class="boximg" src="asset/img/11.jpg">
-        </div>
-        <div class="col-lg-3 moviebox ce-image">
-            <img class="boximgwidth" src="asset/img/12.jpg">
-        </div>
-        <div class="col-lg-3 moviebox ce-image">
-            <img class="boximg" src="asset/img/13.jpg">
-        </div>
-        <div class="col-lg-3 moviebox ce-image">
-            <img class="boximg" src="asset/img/14.jpeg">
-        </div>
-    </div> -->
-    <!-- <div class="row justify-content-end">
-        <div class="col-lg-3 moviebox ce-image">
-            <img class="boximgwidth" src="asset/img/15.jpg">
-        </div>
-        <div class="col-lg-3 moviebox ce-image">
-            <img class="boximg" src="asset/img/16.jpg">
-        </div>
-        <div class="col-lg-3 moviebox ce-image">
-            <img class="boximg" src="asset/img/1.jpg">
-        </div>
-        <div class="col-lg-3 moviebox ce-image">
-            <img class="boximg" src="asset/img/2.jpg">
-        </div>
-    </div> -->
-    <!-- <div class="row justify-content-start">
-        <div class="col-lg-6" style="padding:0">
-            <div class="row">
-                <div class="col-lg-6 box1 ce-image">
-                    <img class="channellogo" src="asset/img/amazon.png">
-                </div>
-                <div class="col-lg-6 box2 ce-image">
-                    <img class="channellogo" src="asset/img/hbo.png">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 box2 ce-image">
-                    <img class="channellogo" src="asset/img/hgtv.png">
-                </div>
-                <div class="col-lg-6 box4 ce-image">
-                    <img class="channellogo" src="asset/img/netflix.png">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 box4 ce-image">
-                    <img class="channellogo" src="asset/img/hulu.png">
-                </div>
-                <div class="col-lg-6 box1 ce-image">
-                    <img class="channellogo" src="asset/img/youtube.png">
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6 box3row subtitle">
-            <p style="padding-left: 50px">You never have to remember<br>
-            what you subscribes. </p>
-        </div>
-    </div> -->
-    <!-- <div class="row">
-        <div class="col-lg-6 box subtitle">
-            <p style="padding-left: 50px">All Channels in One Place</p>
-        </div>
-        <div class="col-lg-3 box4 subtitle">
-            <p class="link">Plan</p>
-        </div>
-        <div class="col-lg-3 box1 subtitle">
-            <p class="logo">Join</p>
-        </div>
-    </div> -->
 
 </body>
 

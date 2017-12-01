@@ -1,10 +1,10 @@
 function onOptionButtonChangeForLogin(event,method){
     $('.switching_form').css({display:'none'});
 
-
    switch(method){
-    case 'visa':
-        console.log('visa');
+    case 'card':
+        console.log('card');
+        $('#card_form').css({display:'inline-block'});
     break;
     case 'venmo':
         console.log('venmo');
@@ -12,6 +12,7 @@ function onOptionButtonChangeForLogin(event,method){
     break;
     case 'paypal':
         console.log('PAYPAL');
+        $('#paypal_form').css({display:'inline-block'});
     break;
    }
 
