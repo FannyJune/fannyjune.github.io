@@ -126,6 +126,11 @@ html body {
 	width: 100%;
 }
 
+a.link, a.link:hover {
+	color: white;
+	text-decoration: none;
+}
+
 .channellogo {
 	width: 40%;
 	margin: 0 auto;
