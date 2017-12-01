@@ -126,6 +126,11 @@ html body {
 	width: 100%;
 }
 
+a.link, a.link:hover {
+	color: white;
+	text-decoration: none;
+}
+
 .channellogo {
 	width: 40%;
 	margin: 0 auto;
@@ -274,13 +279,12 @@ textarea#message-content {
     font-size: 30px;
     color: white;
     background-color: transparent;
-    border-radius: 4px;
-    border-color: white;
-    border-style: solid;
-    border-width: 1px;
-    padding: 5px;
-    padding-left: 10px;
-    margin-bottom: 1rem;
+    border: none;
+    resize: none;
+	outline: none;
+	overflow:hidden
+	height: 35px; 
+	margin:  30px 0 0 50px;
 }
 
 .account-holder>label>select {
