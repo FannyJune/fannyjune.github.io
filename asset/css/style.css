@@ -253,7 +253,7 @@ img.cover {
     background-image: url("../../asset/img/7.png");
 }
 
-div#fanny-pic {
+#fanny-pic {
     background-image: url(../../asset/img/1.jpg);
 }
 
@@ -280,4 +280,9 @@ textarea#message-content {
 	overflow:hidden
 	height: 35px; 
 	margin:  30px 0 0 50px;
+}
+
+a.link, a.link:hover {
+	color: white;
+	text-decoration: none;
 }
