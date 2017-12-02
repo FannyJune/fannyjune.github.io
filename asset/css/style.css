@@ -273,7 +273,7 @@ img.cover {
 }
 
 textarea#message-content {
-	width: calc(100vw / 4);
+	width: calc(100vw/2);
     padding: 0;
     margin: 0;
     font-size: 30px;
@@ -327,6 +327,42 @@ select#paymentaccount-expiration-date-month {
 div#expiration-cvv {
     display: inline-block;
 }
+
+
+@media screen and (max-width: 1024px) { 
+	.link {
+		font-size: 30px;
+	}
+
+	.desc{
+		font-size: 24px;
+	}
+
+	.form-contact > input{
+		font-size: 24px;
+		margin-left: 20px;
+	}
+	
+	textarea#message-content {
+		font-size: 24px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+}	
+
+@media screen and (max-width: 425px) {
+	.desc{
+		font-size: 20px;
+		
+	}
+}
+
+/* @media screen and (max-width: 320px) {
+	textarea#message-content{
+		width:100%;
+	}
+} */
 
 landing-page
 input[type=radio]{
