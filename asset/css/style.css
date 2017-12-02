@@ -126,6 +126,11 @@ html body {
 	width: 100%;
 }
 
+a.link, a.link:hover {
+	color: white;
+	text-decoration: none;
+}
+
 .channellogo {
 	width: 40%;
 	margin: 0 auto;
@@ -253,7 +258,7 @@ img.cover {
     background-image: url("../../asset/img/7.png");
 }
 
-div#fanny-pic {
+#fanny-pic {
     background-image: url(../../asset/img/1.jpg);
 }
 
@@ -274,13 +279,12 @@ textarea#message-content {
     font-size: 30px;
     color: white;
     background-color: transparent;
-    border-radius: 4px;
-    border-color: white;
-    border-style: solid;
-    border-width: 1px;
-    padding: 5px;
-    padding-left: 10px;
-    margin-bottom: 1rem;
+    border: none;
+    resize: none;
+	outline: none;
+	overflow:hidden
+	height: 35px; 
+	margin:  30px 0 0 50px;
 }
 
 .account-holder>label>select {
@@ -324,8 +328,53 @@ div#expiration-cvv {
     display: inline-block;
 }
 
-/* @media (max-width: 767px) { 
-	.hide-box{
-		display: none;
-	}
- } */
+landing-page
+input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+.check{
+  	display: block;
+	position: absolute;
+  	border: 5px solid #AAAAAA;
+  	border-radius: 100%;
+  	height: 25px;
+  	width: 25px;
+  	margin: 7px 0 0 0;
+  	left: 110px;
+	z-index: 5;
+	transition: border .25s linear;
+	-webkit-transition: border .25s linear;
+}
+
+.check::before {
+	display: block;
+	position: absolute;
+	content: '';
+  	border-radius: 100%;
+  	height: 15px;
+  	width: 15px;
+	transition: background 0.25s linear;
+	-webkit-transition: background 0.25s linear;
+}
+
+input[type=radio]:checked ~ .check {
+  border: 5px solid #6e6d6d;
+}
+
+input[type=radio]:checked ~ .check::before{
+  background: #6e6d6d;
+}
+
+input[type=radio] ~ label{
+	font-size: 30px;
+	color: #6e6e6d;
+}
+
+input[type=radio]:checked ~ label{
+	font-size: 30px;
+	color: #6e6e6d;
+}
+
+
