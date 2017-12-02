@@ -358,6 +358,19 @@ div#expiration-cvv {
 	}
 }
 
+@media screen and (min-width: 1025px) and (max-width: 1365px) {
+	.form-contact > input{
+		font-size: 24px;
+		margin-left: 20px;
+	}
+	
+	textarea#message-content {
+		font-size: 24px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+
 /* @media screen and (max-width: 320px) {
 	textarea#message-content{
 		width:100%;
