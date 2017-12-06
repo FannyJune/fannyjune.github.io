@@ -363,7 +363,10 @@ div#expiration-cvv {
 		font-size: 24px;
 		margin-left: 20px;
 	}
-	
+	#password > p {
+		font-size: 24px;
+	}
+
 	textarea#message-content {
 		font-size: 24px;
 		margin-left: 20px;
@@ -371,11 +374,6 @@ div#expiration-cvv {
 	}
 }
 
-/* @media screen and (max-width: 320px) {
-	textarea#message-content{
-		width:100%;
-	}
-} */
 
 landing-page
 input[type=radio]{
