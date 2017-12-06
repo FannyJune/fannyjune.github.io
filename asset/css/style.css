@@ -41,15 +41,11 @@ html body {
 }
 
 .boximg {
-	width: calc(100vw / 3);
-	text-align: center;
-	height: 100%;
+	height: calc(100vh / 3);
 }
 
 .boximgwidth {
 	width: calc(100vw / 4);
-	text-align: center;
-	background-size: cover;
 }
 
 .mvtitle {
@@ -136,23 +132,18 @@ a.link, a.link:hover {
 	margin: 0 auto;
 }
 
-div.closeX {
-	color: white;
-	display: flex;
-	align-items: center;
-}
-
 .closeX>a {
-	width: 100%;
 	text-align: center;
-	font-size: 50px;
-	color: #bdbdbd !important;
 	cursor: pointer;
 }
 
 .col-lg-3 {
 	align-items: center;
 	display: flex;
+}
+
+.col-lg-6 {
+	padding: 0 !important;
 }
 
 .next-chevron {
@@ -220,15 +211,15 @@ form.form-plan-options {
 	margin: auto;
 }
 
-form.form-payment-options {
+form.form-payment {
 	margin: auto;
 }
 
-.form-payment-options>label {
+.form-payment>label {
 	display: block;
 }
 
-.form-payment-options>label>input {
+.form-payment>label>input {
 	margin-right: 10px;
 }
 
@@ -254,14 +245,6 @@ img.cover {
     height: calc(100vh / 3);
 }
 
-#june-pic {
-    background-image: url("../../asset/img/7.png");
-}
-
-#fanny-pic {
-    background-image: url(../../asset/img/1.jpg);
-}
-
 .form-contact > input {
     background-color: transparent;
     border: none;
@@ -284,7 +267,7 @@ textarea#message-content {
 	outline: none;
 	overflow:hidden
 	height: 35px; 
-	margin:  30px 0 0 50px;
+	margin: 30px 0 0 60px;
 }
 
 .account-holder>label>select {
@@ -330,10 +313,6 @@ div#expiration-cvv {
 
 
 @media screen and (max-width: 1024px) { 
-	.link {
-		font-size: 30px;
-	}
-
 	.desc{
 		font-size: 24px;
 	}
@@ -345,16 +324,22 @@ div#expiration-cvv {
 	
 	textarea#message-content {
 		font-size: 24px;
-		margin-left: 20px;
+		margin-left: 40px;
 		margin-right: 20px;
 	}
 
+	.boximgwidth {
+    	width: 100vw;
+	}
+
+	.boximg {
+    	height: calc(100vw/1.5);
+	}
 }	
 
 @media screen and (max-width: 425px) {
 	.desc{
 		font-size: 20px;
-		
 	}
 }
 
@@ -375,13 +360,13 @@ div#expiration-cvv {
 }
 
 
-landing-page
+
 input[type=radio]{
   position: absolute;
   visibility: hidden;
 }
 
-.check{
+.check {
   	display: block;
 	position: absolute;
   	border: 5px solid #AAAAAA;
@@ -411,15 +396,10 @@ input[type=radio]:checked ~ .check {
 }
 
 input[type=radio]:checked ~ .check::before{
-  background: #6e6d6d;
+  background: #ffffff;
 }
 
 input[type=radio] ~ label{
-	font-size: 30px;
-	color: #6e6e6d;
-}
-
-input[type=radio]:checked ~ label{
 	font-size: 30px;
 	color: #6e6e6d;
 }
