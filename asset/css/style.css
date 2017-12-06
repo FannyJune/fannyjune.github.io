@@ -348,13 +348,18 @@ div#expiration-cvv {
 		font-size: 24px;
 		margin-left: 20px;
 	}
-	
+	#password > p {
+		font-size: 24px;
+	}
+
 	textarea#message-content {
 		font-size: 24px;
 		margin-left: 20px;
 		margin-right: 20px;
 	}
 }
+
+
 
 input[type=radio]{
   position: absolute;
