@@ -313,10 +313,6 @@ div#expiration-cvv {
 
 
 @media screen and (max-width: 1024px) { 
-	.link {
-		font-size: 30px;
-	}
-
 	.desc{
 		font-size: 24px;
 	}
@@ -336,11 +332,9 @@ div#expiration-cvv {
     	width: 100vw;
 	}
 
-
 	.boximg {
     	height: calc(100vw/1.5);
 	}
-
 }	
 
 @media screen and (max-width: 425px) {
