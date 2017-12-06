@@ -22,21 +22,20 @@
         </div>
         <div class="col-lg-3 box4">
         </div>
-        <div class="col-lg-3 box closeX">
+        <div class="col-lg-3 box">
           <a href="index.html" class="link">╳</a>
         </div>
     </div>
     <div class="row justify-content-end">
-        <div class="col-lg-3 box1 link">
-            <p style="text-align: center">Step 1.</p>
+        <div class="col-lg-3 box3">
+          <p class="link">Step 1.</p>
         </div>
-        <div class="col-lg-3 box3 desc">
-          <p style="padding-left: 50px">Username</p>
-        </div>
-        <div class="col-lg-3 box1 account-holder">
+        <div class="col-lg-3 box4 account-holder">
           <form class="form-contact">
             <input type="text" name="contact-name" placeholder="Enter your username">
           </form>
+        </div>
+        <div class="col-lg-3 box3 desc">
         </div>
         <div class="col-lg-3 box2">
         </div>
@@ -45,13 +44,12 @@
     <div class="row justify-content-end">
         <div class="col-lg-3 box4">
         </div>
-        <div class="col-lg-3 box2 desc">
-          <p style="padding-left: 50px">Email</p>
-        </div>
         <div class="col-lg-3 box1 account-holder">
           <form class="form-contact">
             <input type="text" name="contact-name" placeholder="Enter your email">
           </form>
+        </div>
+        <div class="col-lg-3 box2 desc">
         </div>
         <div class="col-lg-3 box">
         </div>
@@ -59,106 +57,45 @@
 
     <div class="row justify-content-end">
         <div class="col-lg-3 box">
-        </div>
-        <div class="col-lg-3 box1 desc">
-          <p style="padding-left: 50px">Password</p>
         </div>
         <div class="col-lg-3 box3 account-holder">
           <form class="form-contact">
             <input type="text" name="contact-name" placeholder="Create your password">
           </form>
         </div>
+        <div class="col-lg-3 box4 desc">
+        </div>
         <div class="col-lg-3 box1 desc">
         </div>
-<!--    <div class="col-lg-3 box1 desc">
-          <p style="padding-left: 50px">Minimum 7 Characters<br>Letters and Numbers Only</p>
-        </div> -->
     </div>
 
     <div class="row justify-content-end">
-        <div class="col-lg-3 box1 link">
-            <p style="text-align: center">Step 2.</p>
+        <div class="col-lg-3 box3">
+          <p class="link">Step 2.</p>
         </div>
-        <div class="col-lg-3 box3 desc">
+        <div class="col-lg-3 box2 desc">
           <p style="padding-left: 50px">Payment Method</p>
         </div>
-        <div class="col-lg-3 box2">
-            <form class="form-payment-options">
-                <input type="radio" id="visa" name="selector">
-                <div class="check"></div>
-                <label for="visa">Visa</label>
-
-                <input type="radio" id="venmo" name="selector">
+        <div class="col-lg-3 box1">
+            <form class="form-payment">
+                <input type="radio" id="venmo" value="1">
                 <div class="check"></div>
                 <label for="venmo">Venmo</label>
 
-                <input type="radio" id="paypal" name="selector">
+                <input type="radio" id="paypal" value="2">
                 <div class="check"></div>
                 <label for="paypal">Paypal</label>
+
+                <input type="radio" id="visa" value="3">
+                <div class="check"></div>
+                <label for="visa">Visa</label>
             </form>
-        </div>
-        <div class="col-lg-3 subtitle">
-        </div>
-    </div>
-    <script src="asset/js/script.js"></script>
-
-    <div class="row justify-content-end">
-        <div class="col-lg-3 box">
-        </div>
-        <div class="col-lg-3 box1 desc">
-          <p style="padding-left: 50px">Account Info</p>
-        </div>
-        <div class="col-lg-3 box3 account-holder">
-            <label id="venmo_form" class="switching_form">
-                <input type="text" name="paymentaccount-username" placeholder="enter your username">
-            </label>
-
-            <label id="card_form" class="switching_form">
-                <select name="paymentaccount-credit-card" id="paymentaccount-credit-card">
-                    <option value="visa">Visa</option>
-                    <option value="mastercard">Mastercard</option>
-                    <option value="discover">Discover</option>
-                </select>
-                <input type="text" name="paymentaccount-username" placeholder="cardholder name">
-                <input type="text" name="paymentaccount-card-number" placeholder="card number">
-                <div id="expiration-cvv">
-                    <select name="paymentaccount-expiration-date-month" id="paymentaccount-expiration-date-month">
-                        <option value="january">01</option>
-                        <option value="february">02</option>
-                        <option value="march">03</option>
-                        <option value="april">04</option>
-                        <option value="may">05</option>
-                        <option value="june">06</option>
-                        <option value="july">07</option>
-                        <option value="august">08</option>
-                        <option value="september">09</option>
-                        <option value="october">10</option>
-                        <option value="november">11</option>
-                        <option value="december">12</option>
-                    </select>
-                    <select name="paymentaccount-expiration-date-year" id="paymentaccount-expiration-date-year">
-                        <option value="year1">17</option>
-                        <option value="year2">18</option>
-                        <option value="year3">19</option>
-                        <option value="year4">20</option>
-                        <option value="year5">21</option>
-                        <option value="year6">22</option>
-                        <option value="year7">23</option>
-                        <option value="year8">24</option>
-                    </select>
-                    <input type="text" name="paymentaccount-expiration-cvv" placeholder="CVV" id="CVV">
-                </div>
-            </label>
-
-            <label id="paypal_form" class="switching_form">
-                <p>You will be directed to PayPal to log in and complete your payment.</p>
-            </label>
         </div>
         <div class="col-lg-3 subtitle">
             <p class="logo">Join</p>
         </div>
     </div>
-
+    <script src="asset/js/script.js"></script>
 </body>
 
 </body>

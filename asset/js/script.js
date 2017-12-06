@@ -1,5 +1,4 @@
 function menuClickIndex(x) {
-
     menuClick(x);
     var mainImage = document.querySelector('.main-image');
     var mainText = document.querySelector('.main-text');
@@ -37,7 +36,6 @@ function menuClickIndex(x) {
     }
 
 }
-
 
 function menuClick(x) {
     var menutext = document.querySelector('#menu');
