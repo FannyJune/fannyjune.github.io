@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="asset/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Halant:700" rel="stylesheet">
+    <script src="asset/js/script.js"></script>
 </head>
 
 <body>
     <!-- cover starts -->
-	<div class="main-image d-sm-none d-lg-flex d-none">
+	<div class="main-image">
 		<img src="asset/img/2.jpg">
 	</div>
-	<div class="main-text d-sm-none d-lg-flex d-none">
+	<div class="main-text">
 		<p>Only $2,500/Month</p>
 	</div>
     
@@ -23,9 +24,9 @@
     	<div class="col-lg-3 box subtitle">
     		<a class="logo" href="#">Blast</a>
     	</div>
-    	<div class="col-lg-3 box2 d-sm-none d-lg-flex d-none">
+    	<div class="col-lg-3 d-sm-none d-lg-flex d-none box2">
     	</div>
-        <div class="col-lg-3 box1 d-sm-none d-lg-flex d-none" id="menu1_sub">
+        <div class="col-lg-3 box1" id="menu1_sub">
         </div>
     	<div class="col-lg-3 box1" id="menu1" style="display: none">
             <a href="plan.html" class="link">Plan</a>
@@ -33,29 +34,32 @@
     	<div class="col-lg-3 box2 subtitle" id="menu" >
             <p onclick="menuClickIndex(true);" class="link">Menu</p>
     	</div>
-        <div class="col-lg-3 box" id="xmenu" style="display: none;">
+        <div class="col-lg-3 box2" id="xmenu" style="display: none;">
           <a href="#" onclick="menuClickIndex(false);" class="link">╳</a>
+        </div>
+        <div class="col-lg-3 box1" id="menu1_mobile" style="display: none">
+            <a href="plan.html" class="link">Plan</a>
         </div>
     </div>
     <div class="row justify-content-end">
-    	<div class="col-lg-3 box2 d-sm-none d-lg-flex d-none">
+    	<div class="col-lg-3 d-sm-none d-lg-flex d-none box2">
     	</div>
-    	<div class="col-lg-3 box1 d-sm-none d-lg-flex d-none">
+    	<div class="col-lg-3 d-sm-none d-lg-flex d-none box1">
     	</div>
-        <div class="col-lg-3 box3 d-sm-none d-lg-flex d-none" id="menu2_sub">
+        <div class="col-lg-3 box3" id="menu2_sub">
         </div>
         <div class="col-lg-3 box3" id="menu2" style="display: none">
             <a href="login.html" class="link">Join</a>
         </div>
-        <div class="col-lg-3 box1">
+        <div class="col-lg-3 d-sm-none d-lg-flex d-none box1">
         </div>
     </div>
     <div class="row justify-content-end">
-    	<div class="col-lg-3 box1 d-sm-none d-lg-flex d-none">
+    	<div class="col-lg-3 d-sm-none d-lg-flex d-none box1">
     	</div>
-    	<div class="col-lg-3 box3 d-sm-none d-lg-flex d-none">
+    	<div class="col-lg-3 d-sm-none d-lg-flex d-none box3">
     	</div>
-        <div class="col-lg-3 box1 d-sm-none d-lg-flex d-none" id="menu3_sub">
+        <div class="col-lg-3 box1" id="menu3_sub">
         </div>
     	<div class="col-lg-3 box1" id="menu3" style="display: none">
             <a href="about.html" class="link">About</a>
@@ -68,7 +72,7 @@
     <!-- 2nd cover -->
     <div class="row justify-content-start">
     	<div class="col-lg-6 box2row subtitle">
-            <p style="padding: 0 50px">Watch all videos existing<br>
+            <p style="padding: 0 50px">Watch all videos<br>
             in the whole world.</p>
     	</div>
         <div class="col-lg-6" style="padding:0">
@@ -188,6 +192,5 @@
             <p class="logo"><a href="login.html">Join</a></p>
         </div>
     </div>
-    <script src="asset/js/script.js"></script>
 </body>
 </html>
