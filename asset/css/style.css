@@ -19,7 +19,7 @@ html body {
 }
 
 .main-text {
-	font-size: 120px;
+	font-size: 80px;
 	color: white;
 	z-index: 0;
 	position: absolute;
@@ -120,6 +120,7 @@ html body {
 	font-size: 40px;
 	text-align: center;
 	width: 100%;
+	cursor: pointer;
 }
 
 a.link, a.link:hover {
