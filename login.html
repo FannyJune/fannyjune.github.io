@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Join</title>
-    <link rel="stylesheet" href="asset/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Halant:700" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
@@ -80,13 +80,20 @@
             <p class="link">Step 2.</p>
         </div>
 
-        <div class="col-lg-3 box3 desc">
-            <p style="padding-left: 50px">Payment</p>
+    
+        <div class="col-lg-6 box1">
+            <form class="form-payment-options">
+                <label>
+                    <input onclick="onOptionButtonChangeForLogin(event,'card')" type="radio" name="payment" value="card" checked> Card
+                </label>
+                <label>
+                    <input onclick="onOptionButtonChangeForLogin(event,'venmo')" type="radio" name="payment" value="venmo"> Venmo
+                </label>
+                <label>
+                    <input onclick="onOptionButtonChangeForLogin(event,'paypal')" type="radio" name="payment" value="paypal"> Paypal
+                </label>
 
-        </div>
-        <div class="col-lg-3 box1">
-            <form class="form-payment">
-                <div class="radio-row">
+                <!-- <div class="radio-row">
                     <input type="radio" id="visa" value="3" name="payment">
                     <div class="check"></div>
                     <label for="visa">Visa</label>
@@ -102,9 +109,11 @@
                         <input type="radio" id="paypal" value="2" name="payment">
                         <div class="check"></div>
                         <label for="paypal">Paypal</label>  
-                </div>
-                
+                </div> -->
+
             </form>
+
+
         </div>
         <div class="col-lg-3 subtitle">
         </div>
@@ -114,11 +123,53 @@
     <div class="row justify-content-end">
         <div class="col-lg-3 d-sm-none d-lg-flex d-none box">
         </div>
-        <div class="col-lg-3 box1 desc">
-        </div>
-        <div class="col-lg-3 box3 account-holder">
+        
+        <div class="col-lg-6 box3 account-holder">
+            
+
+            <div id="card_form" class="switching_form">
+                <select name="paymentaccount-credit-card" id="paymentaccount-credit-card">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="discover">Discover</option>
+                </select>
+                <input type="text" name="paymentaccount-username" placeholder="cardholder name">
+                <input type="text" name="paymentaccount-card-number" placeholder="card number">
+                <div id="expiration-cvv">
+                    <select name="paymentaccount-expiration-date-month" id="paymentaccount-expiration-date-month">
+                        <option value="january">01</option>
+                        <option value="february">02</option>
+                        <option value="march">03</option>
+                        <option value="april">04</option>
+                        <option value="may">05</option>
+                        <option value="june">06</option>
+                        <option value="july">07</option>
+                        <option value="august">08</option>
+                        <option value="september">09</option>
+                        <option value="october">10</option>
+                        <option value="november">11</option>
+                        <option value="december">12</option>
+                    </select>
+                    <select name="paymentaccount-expiration-date-year" id="paymentaccount-expiration-date-year">
+                        <option value="year1">17</option>
+                        <option value="year2">18</option>
+                        <option value="year3">19</option>
+                        <option value="year4">20</option>
+                        <option value="year5">21</option>
+                        <option value="year6">22</option>
+                        <option value="year7">23</option>
+                        <option value="year8">24</option>
+                    </select>
+                    <input type="text" name="paymentaccount-expiration-cvv" placeholder="CVV" id="CVV">
+                </div>
+            </div>
+
             <label id="venmo_form" class="switching_form">
-                <input type="text" name="paymentaccount-username" placeholder="enter your username">
+                    <input type="text" name="paymentaccount-username" placeholder="enter your username">
+                </label>
+
+            <label id="paypal_form" class="switching_form">
+                <p>You will be directed to PayPal to log in and complete your payment.</p>
             </label>
 
         </div>

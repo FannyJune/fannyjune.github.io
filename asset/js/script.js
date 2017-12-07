@@ -87,3 +87,22 @@ function detectmob() {
         return false;
     }
 }
+
+function onOptionButtonChangeForLogin(event,method){
+    $('.switching_form').css({display:'none'});
+
+   switch(method){
+    case 'card':
+        console.log('card');
+        $('#card_form').css({display:'inline-grid'});
+    break;
+    case 'venmo':
+        console.log('venmo');
+        $('#venmo_form').css({display:'inline-block'});
+    break;
+    case 'paypal':
+        console.log('paypal');
+        $('#paypal_form').css({display:'inline-block'});
+    break;
+   }
+}
