@@ -20,12 +20,12 @@ html body {
 }
 
 .main-text {
-	font-size: 80px;
+	font-size: 120px;
 	color: white;
 	z-index: 0;
 	position: absolute;
-	top: 63%;
-	left: 19%;
+	top: 65%;
+	left: 20%;
 	background: -webkit-linear-gradient(bottom left, #FF0F0F, #FFDF80);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
