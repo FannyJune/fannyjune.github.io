@@ -13,9 +13,8 @@ html body {
 
 .main-image {
 	position: absolute;
-	margin-top: auto;
- 	margin-bottom: auto;
-	width: 100%;
+	margin: auto 0;
+	height: 100%;
 }
 
 .main-text {
@@ -152,13 +151,18 @@ p {
 	display: block;
 	vertical-align: middle;
 	width: 100%;
+	padding: 0 50px;
 }
 
 
 
 /* form */
 form {
-    margin: auto;
+	margin: 0 50px;
+}
+
+.form-payment-options {
+	margin: auto;
 }
 
 .form-contact>input {
@@ -179,7 +183,7 @@ form {
 	height: 25px;
 	width: 25px;
 	margin: 7px 0 0 0;
-	left: 400px;
+	left: 350px;
 	z-index: 5;
 	transition: border .25s linear;
 	-webkit-transition: border .25s linear;
