@@ -1,5 +1,6 @@
+/* general */
 html body {
-	background-color: #111111;
+	background-color: #000000;
 	font-family: 'Halant', serif;
 }
 
@@ -11,24 +12,22 @@ html body {
 }
 
 .main-image {
-	z-index: 0;
 	position: absolute;
-	left: 50%;
-	top: 20%;
-	transform: translateX(-50%)
+	margin: auto;
+	width: 100%;
 }
 
 .main-text {
-	font-size: 80px;
+	font-size: 120px;
 	color: white;
 	z-index: 0;
 	position: absolute;
-	top: 63%;
-	left: 19%;
+	top: 65%;
+	left: 20%;
 	background: -webkit-linear-gradient(bottom left, #FF0F0F, #FFDF80);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	width: 50%;
+	width: 60%;
 	line-height: 110px;
 	z-index: 10;
 }
@@ -82,12 +81,12 @@ html body {
 
 .box1 {
 	height: calc(100vh / 3);
-	background-color: rgba(51, 51, 51, .2);
+	background-color: rgba(51, 51, 51, .1);
 }
 
 .box2 {
 	height: calc(100vh / 3);
-	background-color: rgba(51, 51, 51, .1);
+	background-color: rgba(51, 51, 51, .2);
 }
 
 .box3 {
@@ -148,104 +147,26 @@ a.link:hover {
 	padding: 0 !important;
 }
 
-.next-chevron {
-	background: url(../../asset/img/next-page-white.svg);
-	display: inline-flex;
-	width: 20px;
-	height: 20px;
-	background-size: contain;
-	background-repeat: no-repeat;
-	margin-bottom: 4px;
-	margin-left: 20px;
-	vertical-align: middle;
-}
-
-.step {
-	width: 103px;
-	margin: auto;
-}
-
 p {
 	display: block;
 	vertical-align: middle;
 	width: 100%;
+	padding: 0 50px;
 }
 
-form.form-plan-options {
-	/* display: flex; */
+.pleft {
+	text-align: center;
+}
+
+
+
+/* form */
+form {
+	margin: 0 50px;
+}
+
+.form-payment-options {
 	margin: auto;
-}
-
-.form-plan-options>label>input {
-	margin-right: 10px;
-}
-
-.form-plan-options>label {
-	display: block;
-}
-
-.action-button {
-	background: -webkit-linear-gradient(bottom left, #FF0F0F, #FFDF80);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	font-size: 30px;
-}
-
-.account-holder>label>input {
-	border-radius: 4px;
-	border-color: white;
-	background-color: transparent;
-	border-style: solid;
-	border-width: 1px;
-	padding: 5px;
-	padding-left: 15px;
-	margin-bottom: 1rem;
-	color: white;
-}
-
-.tips>p {
-	vertical-align: middle;
-	/* text-align: center; */
-}
-
-.guidelines {
-	vertical-align: middle;
-	margin: auto;
-}
-
-form.form-payment {
-	margin: auto;
-}
-
-.form-payment>label {
-	display: block;
-}
-
-.form-payment>label>input {
-	margin-right: 10px;
-}
-
-.subtitle-small {
-	font-size: 32px;
-	background: -webkit-linear-gradient(bottom left, #FF0F0F, #FFDF80);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-
-/*.col-lg-6 {display: flex;align-items: center;}
-*/
-
-.moviecover {
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	height: calc(100vh / 3);
-}
-
-img.cover {
-	object-fit: contain;
-	height: calc(100vh / 3);
 }
 
 .form-contact>input {
@@ -253,75 +174,94 @@ img.cover {
 	border: none;
 	resize: none;
 	outline: none;
+	font-size: 30px;
+	width: 100%;
+	color: white;
+}
+
+.check {
+	display: block;
+	position: absolute;
+	border: 5px solid #AAAAAA;
+	border-radius: 100%;
+	height: 25px;
+	width: 25px;
+	margin: 7px 0 0 0;
+	left: 350px;
+	z-index: 5;
+	transition: border .25s linear;
+	-webkit-transition: border .25s linear;
+}
+
+input[type=radio]~label {
 	margin-left: 50px;
 	font-size: 30px;
-	color: white;
-}
-
-textarea#message-content {
-	width: calc(100vw/2);
-	padding: 0;
-	margin: 0;
-	font-size: 30px;
-	color: white;
-	background-color: transparent;
-	border: none;
-	resize: none;
-	outline: none;
-	overflow: hidden height: 35px;
-	margin: 30px 0 0 60px;
-}
-
-.account-holder>label>select {
-	border-radius: 4px;
-	border-color: white;
-	background-color: transparent;
-	border-style: solid;
-	border-width: 1px;
-	padding: 5px;
-	padding-left: 15px;
-	margin-bottom: 1rem;
 	color: #6e6e6d;
-	height: 36px;
-	/* width: 70%; */
 }
 
-paymentaccount-expiration-cvv {}
-
-input#CVV {
-	/* border-radius: 4px; */
-	/* border-color: white; */
-	/* background-color: transparent; */
-	/* border-style: solid; */
-	/* border-width: 1px; */
-	/* padding: 5px; */
-	/* padding-left: 15px; */
-	/* margin-bottom: 1rem; */
-	/* color: white; */
+input[type="radio"] {
+	position: absolute;
+	visibility: hidden;
 }
 
-select#paymentaccount-expiration-date-year {
-	height: 36px;
-	background: none;
-	color: #6e6e6d;
-	border-radius: 4px;
-    border-color: white;
+#venmo_form{
+	display: none;
 }
 
-
-select#paymentaccount-expiration-date-month {
-	height: 36px;
-	background: none;
-	color: #6e6e6d;
-	border-radius: 4px;
-    border-color: white;
+#paypal_form{
+	display: none;
+	padding: 100px;
 }
-
 
 div#expiration-cvv {
 	display: inline-block;
 }
 
+form.form-payment-options {
+    display: block;
+}
+
+.col-lg-6.account-holder {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+div#card_form {
+    height: auto;
+    display: inline-grid;
+	font-size: 30px;
+}
+
+select {
+	background: none;
+	color: #6e6e6d;
+	border: none;
+	align-self: center;
+}
+
+#card_form>input[type="text"] {
+    background: none;
+    color: #6e6e6d;
+    border-style: none;
+    vertical-align: top;
+	outline: none;
+	margin: 0 10px;
+}
+
+input#CVV {
+	background-color: transparent;
+	border: none;
+	padding: 5px;
+	padding-left: 15px;
+	color: white;
+	outline: none;
+	width: 100px;
+}
+
+
+
+/* mobile */
 @media screen and (max-width: 1024px) {
 	.desc {
 		font-size: 24px;
@@ -330,23 +270,48 @@ div#expiration-cvv {
 		font-size: 24px;
 		margin-left: 20px;
 	}
-	textarea#message-content {
-		font-size: 24px;
-		margin-left: 40px;
-		margin-right: 20px;
-	}
 	.boximgwidth {
 		width: 100vw;
 	}
 	.boximg {
 		height: calc(100vw/1.5);
 	}
-}
+	.main-image {
+		display: none;
+	}
+	.main-text {
+		display: none;
+	}
+	#menu1_sub {
+		display: none;
+	}
 
-@media screen and (max-width: 425px) {
-	.desc {
+	.check {
+		left: 300px;
+	}
+
+	#paypal_form{
+		display: none;
+		padding: 0px;
+	}
+
+	input[type=radio]~label {
 		font-size: 20px;
 	}
+
+	div#card_form {
+	    height: auto;
+	    display: inline-grid;
+	    padding: 50px 0;
+	    width: 75%;
+	    font-size: 20px;
+	}
+
+	#card_form>input[type="text"] {
+		margin: 0 5px;
+	    font-size: 20px;
+	}
+
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1365px) {
@@ -357,152 +322,9 @@ div#expiration-cvv {
 	#password>p {
 		font-size: 24px;
 	}
-	textarea#message-content {
-		font-size: 24px;
-		margin-left: 20px;
-		margin-right: 20px;
+
+	.check {
+		left: 300px;
 	}
-}
 
-
-.check {
-	display: block;
-	position: absolute;
-	border: 5px solid #AAAAAA;
-	border-radius: 100%;
-	height: 25px;
-	width: 25px;
-	margin: 7px 0 0 0;
-	left: 110px;
-	z-index: 5;
-	transition: border .25s linear;
-	-webkit-transition: border .25s linear;
-}
-
-.check::before {
-	display: block;
-	position: absolute;
-	content: '';
-	border-radius: 100%;
-	height: 15px;
-	width: 15px;
-	transition: background 0.25s linear;
-	-webkit-transition: background 0.25s linear;
-}
-
-input[type=radio]:checked~.check {
-	border: 5px solid #6e6d6d;
-}
-
-input[type=radio]:checked~.check::before {
-	background: #ffffff;
-}
-
-input[type=radio]~label {
-	font-size: 30px;
-	color: #6e6e6d;
-}
-
-account-holder>label>select {
-	border-radius: 4px;
-	border-color: white;
-	background-color: transparent;
-	border-style: solid;
-	border-width: 1px;
-	padding: 5px;
-	padding-left: 15px;
-	margin-bottom: 1rem;
-	color: white;
-	height: 36px;
-}
-
-paymentaccount-expiration-cvv {}
-
-input#CVV {
-	border-radius: 4px;
-	border-color: white;
-	background-color: transparent;
-	border-style: solid;
-	border-width: 1px;
-	padding: 5px;
-	padding-left: 15px;
-	/* margin-bottom: 1rem; */
-	color: white;
-	width: 70px;
-	margin: 10px 10px;
-}
-
-select#paymentaccount-expiration-date-year {
-	height: 36px;
-}
-
-select#paymentaccount-expiration-date-month {
-	height: 36px;
-}
-
-div#expiration-cvv {
-	display: inline-block;
-}
-
-#venmo_form{
-	display: none;
-}
-
-#paypal_form{
-	display: none;
-}
-
-label{
-	color: #6e6e6d;
-	display: block;
-	vertical-align: top;
-}
-
-
-
-form {
-    margin: auto;
-}
-
-.col-lg-6.box1 {display: flex;}
-
-form.form-payment-options {
-    /* flex: 0 0 50%; */
-    /* max-width: 50%; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    display: block;
-}
-
-.col-lg-6.box3.account-holder {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-input[type="radio"] {
-    margin-right: 10px;
-    vertical-align: top;
-}
-
-div#card_form {
-    height: auto;
-    display: inline-grid;
-}
-
-option {}
-
-select {background: none;color: #6e6e6d;border-radius: 4px;border-color: white;height: 36px;align-self: center;margin: 10px 10px;}
-
-#card_form>input[type="text"] {
-    background: none;
-    color: #6e6e6d;
-    border-radius: 4px;
-    border-color: white;
-    height: 36px;
-    padding: 10px;
-    border-style: solid;
-    border-width: 1px;
-    vertical-align: top;
-    margin: 10px 10px;
 }
