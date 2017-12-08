@@ -3,12 +3,12 @@ window.onload = function () {
     var mainText = document.querySelector('.main-text');
     var m1Sub = document.querySelector('#menu1_sub');
 
-    if (detectmob()) {
+    if (mainImage && mainText && m1Sub && detectmob()) {
         mainImage.style.display = "none";
         mainText.style.display = "none";
         m1Sub.style.display = "none";
     }
-};
+};        
 
 function menuClickIndex(x) {
     menuClick(x);
@@ -55,7 +55,6 @@ function menuClickIndex(x) {
         m2Sub.style.display = "inherit";
         m3Sub.style.display = "inherit";
     }
-
 }
 
 function menuClick(x) {
@@ -93,16 +92,22 @@ function onOptionButtonChangeForLogin(event,method){
 
    switch(method){
     case 'card':
-        console.log('card');
+        $('.subform').css({display:'none'});
         $('#card_form').css({display:'inline-grid'});
+        $('.check').css({background: 'none'});
+        $('#cardradio').css({background: '#ffffff'});
     break;
     case 'venmo':
-        console.log('venmo');
+        $('.subform').css({display:'none'});
         $('#venmo_form').css({display:'inline-block'});
+        $('.check').css({background: 'none'});
+        $('#venmoradio').css({background: '#ffffff'});
     break;
     case 'paypal':
-        console.log('paypal');
+        $('.subform').css({display:'none'});
         $('#paypal_form').css({display:'inline-block'});
+        $('.check').css({background: 'none'});
+        $('#paypalradio').css({background: '#ffffff'});
     break;
    }
 }
