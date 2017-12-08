@@ -292,7 +292,7 @@ input#CVV {
 
 	#paypal_form{
 		display: none;
-		padding: 50px;
+		padding: 0px;
 	}
 
 	input[type=radio]~label {
