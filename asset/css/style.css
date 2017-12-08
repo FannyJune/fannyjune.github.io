@@ -13,8 +13,8 @@ html body {
 
 .main-image {
 	position: absolute;
-	margin: auto 0;
-	height: 100%;
+	margin: auto;
+	width: 100%;
 }
 
 .main-text {
@@ -152,6 +152,10 @@ p {
 	vertical-align: middle;
 	width: 100%;
 	padding: 0 50px;
+}
+
+.pleft {
+	text-align: center;
 }
 
 
